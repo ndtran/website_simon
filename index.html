@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Serveur Minecraft</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #2b5876, #4e4376);
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        padding: 50px 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      header h1 {
+        font-size: 3rem;
+        margin: 0;
+        animation: fadeIn 2s;
+      }
+      header p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+      }
+      a.server-link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        color: #fff;
+        text-decoration: none;
+        background: linear-gradient(45deg, #56ccf2, #2f80ed);
+        border-radius: 30px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      a.server-link:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      }
+      footer {
+        margin-top: auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      footer p {
+        font-size: 0.9rem;
+        margin: 0;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenue sur mes serveurs Minecraft !</h1>
+      <p>Rejoins-nous et découvre mes mondes !</p>
+      <a class="server-link" href="minecraft://minecraft.noxsaber.ch:19132">
+        Void World
+      </a>
+      <a class="server-link" href="minecraft://minecraft.noxsaber.ch:19136">
+        Water World
+      </a>
+    </header>
+
+    <footer>
+      <p>&copy; 2024 NoxSaber.ch. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
