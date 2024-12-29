@@ -45,6 +45,14 @@
         transform: scale(1.1);
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
       }
+      .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 2s;
+      }
       footer {
         margin-top: auto;
         padding: 20px;
@@ -70,6 +78,9 @@
   <body>
     <header>
       <h1>Bienvenue sur mes serveurs Minecraft !</h1>
+    </header>
+
+    <div class="main">
       <p>Rejoins-nous et découvre mes mondes !</p>
       <a class="server-link" href="minecraft://minecraft.noxsaber.ch:19132">
         Void World
@@ -77,7 +88,25 @@
       <a class="server-link" href="minecraft://minecraft.noxsaber.ch:19136">
         Water World
       </a>
-    </header>
+      <a class="server-link" href="steam://connect/minecraft.noxsaber.ch:19132">
+        Void World via steam
+      </a>
+      <a class="server-link" href="steam://connect/minecraft.noxsaber.ch:19136">
+        Water World via steam
+      </a>
+      <a
+        class="server-link"
+        href="minecraft://connect/minecraft.noxsaber.ch:19132"
+      >
+        Void World
+      </a>
+      <a
+        class="server-link"
+        href="minecraft://connect/minecraft.noxsaber.ch:19136"
+      >
+        Water World
+      </a>
+    </div>
 
     <footer>
       <p>&copy; 2024 NoxSaber.ch. Tous droits réservés.</p>
